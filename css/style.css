@@ -52,7 +52,6 @@ body {
 #main section.hero {
   position: relative;
   top: 120px;
-  border: 1px solid;
 }
 #main section.hero .hero__title {
   font-family: mada;
@@ -64,4 +63,57 @@ body {
   margin-bottom: 30px;
   line-height: 80px;
   font-family: lato;
+}
+#main section.hero .hero__content {
+  font-family: mada;
+  overflow: hidden;
+}
+#main section.hero .hero__content h5 {
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  margin-bottom: 5px;
+  text-transform: capitalize;
+  color: #aaaaaa;
+}
+#main section.hero .hero__content p {
+  font-size: 14px;
+  font-weight: 500;
+}
+#main section.hero .hero__button {
+  margin-top: 40px;
+  display: flex;
+  width: 250px;
+}
+#main section.hero .hero__button a {
+  border: 1px solid;
+  text-decoration: none;
+  font-size: 20px;
+  height: 15px;
+  width: 15px;
+  padding: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px 20px 0px 0px;
+  border-radius: 50%;
+  border: none;
+  color: #fff;
+}
+#main section.hero .hero__button a:nth-child(1) {
+  background: linear-gradient(
+    to bottom right,
+    #405de6,
+    #5851d8,
+    #833ab4,
+    #c13584,
+    #e1306c,
+    #fd1d1d,
+    #f56040,
+    #f77737,
+    #fcaf45,
+    #ffdc80,
+    #ffffff
+  );
+  background-clip: text;
 }
