@@ -12,7 +12,7 @@ body {
 }
 #main {
   height: 1000px;
-  background: url('../images/model1.jpg');
+  background: url('../images/model1.jpg') no-repeat no-repeat;
   background-size: contain;
   background-position-y: -140px;
   background-position-x: 150px;
@@ -97,10 +97,10 @@ body {
   align-items: center;
   margin: 0px 20px 0px 0px;
   border-radius: 50%;
-  border: none;
-  color: #fff;
+  /* border: none; */
+  /* color: #fff; */
 }
-#main section.hero .hero__button a:nth-child(1) {
+/* #main section.hero .hero__button a:nth-child(1):hover {
   background: linear-gradient(
     to bottom right,
     #405de6,
@@ -116,4 +116,15 @@ body {
     #ffffff
   );
   background-clip: text;
+  color: #ffffff;
+} */
+
+#main section.hero .hero__button a:nth-child(1) {
+  color: #1db954;
+}
+#main section.hero .hero__button a:nth-child(2) {
+  color: #053eff;
+}
+#main section.hero .hero__button a:nth-child(3) {
+  color: #c4302b;
 }
