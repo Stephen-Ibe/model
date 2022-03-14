@@ -48,3 +48,20 @@ body {
 #main header nav ul li a i {
   font-weight: 600;
 }
+
+#main section.hero {
+  position: relative;
+  top: 120px;
+  border: 1px solid;
+}
+#main section.hero .hero__title {
+  font-family: mada;
+  text-transform: capitalize;
+}
+#main section.hero .hero__title h1 {
+  font-size: 90px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  line-height: 80px;
+  font-family: lato;
+}
