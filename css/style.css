@@ -1,0 +1,50 @@
+*,
+*::after,
+*::before {
+  margin: unset;
+  padding: unset;
+  box-sizing: border-box;
+}
+html,
+body {
+  background-color: #f9f9f9;
+  overflow: hidden;
+}
+#main {
+  height: 1000px;
+  background: url('../images/model1.jpg');
+  background-size: contain;
+  background-position-y: -140px;
+  background-position-x: 150px;
+}
+
+#main header {
+  font-family: mada;
+  padding: 60px 0px;
+}
+#main header .logo h1 {
+  text-transform: lowercase;
+  font-size: 20px;
+  font-weight: 600;
+}
+#main header nav {
+  float: right;
+}
+
+#main header nav ul li {
+  float: left;
+  list-style: none;
+}
+
+#main header nav ul li a {
+  display: block;
+  text-decoration: none;
+  text-transform: lowercase;
+  font-size: 15px;
+  font-weight: 600;
+  padding-left: 40px;
+  color: #000;
+}
+#main header nav ul li a i {
+  font-weight: 600;
+}
