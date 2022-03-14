@@ -11,11 +11,12 @@ body {
   overflow: hidden;
 }
 #main {
-  height: 1000px;
-  background: url('../images/model1.jpg') no-repeat no-repeat;
+  height: 100vh;
+  background: url('../images/model1.jpg') no-repeat;
   background-size: contain;
   background-position-y: -140px;
   background-position-x: 150px;
+  position: relative;
 }
 
 #main header {
@@ -81,7 +82,7 @@ body {
   font-weight: 500;
 }
 #main section.hero .hero__button {
-  margin-top: 40px;
+  margin-top: 60px;
   display: flex;
   width: 250px;
 }
@@ -121,4 +122,92 @@ body {
 #main section.hero .hero__button a:nth-child(3):hover {
   background-color: #c4302b;
   color: #fff;
+}
+
+#main .hero aside {
+  transform-origin: right;
+  transform: rotate(90deg);
+  position: relative;
+  top: 600px;
+}
+#main .hero aside ul li {
+  list-style: none;
+  margin-right: 70px;
+  display: inline-block;
+}
+#main .hero aside ul li a {
+  text-decoration: none;
+  font-family: mada;
+  font-size: 14px;
+  color: #aaaaaa;
+  text-transform: lowercase;
+}
+#main .hero aside ul li a:hover {
+  color: #000;
+}
+
+#main footer {
+  height: 240px;
+}
+#main footer .footer__left {
+  background-color: #eeeeee;
+  height: inherit;
+  width: 100%;
+  position: absolute;
+  bottom: 0px;
+}
+#main footer .footer__right {
+  background-color: #273238;
+  height: inherit;
+  width: 50%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+#main footer .footer__left .footer__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 240px;
+}
+#main footer .footer__left .footer__content h1 {
+  font-size: 35px;
+  font-weight: 400;
+  font-family: fira sans;
+}
+#main footer .footer__left .footer__content a {
+  font-size: 35px;
+  font-weight: 400;
+  font-family: fira sans;
+  text-decoration: none;
+  color: #6b6b6b;
+}
+#main footer .footer__left .footer__content a:hover {
+  color: #273238;
+}
+#main footer .footer__left .footer__content h4 {
+  font-size: 14px;
+  font-family: mada;
+}
+#main .footer__container {
+  position: relative;
+  z-index: 3;
+}
+#main .footer__container.footer__pic {
+  position: relative;
+  height: 300px;
+  width: 100%;
+  bottom: 50px;
+  overflow: hidden;
+}
+#main footer .footer__container.footer__button {
+  display: flex;
+}
+#main footer .footer__container.footer__button button {
+  border: none;
+  background-color: #273238;
+  color: #ffffff;
+  padding: 15px;
+  cursor: pointer;
+  font-weight: 600;
 }
