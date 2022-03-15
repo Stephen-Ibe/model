@@ -10,6 +10,7 @@
     <title>Modela</title>
 
     <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./css/unsemantic-grid-responsive-tablet.css" />
     <link rel="stylesheet" href="./css/line-awesome.css" />
     <link rel="stylesheet" href="./css/style.css" />
@@ -108,13 +109,32 @@
             <div class="grid-50 grid-parent">
               <div class="grid-50 grid-parent">
                 <div class="footer__container footer__pic">
-                  <img src="./images/swipe1.jpg" alt="footer__image1" />
+                  <div class="swiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <img src="./images/swipe1.jpg" alt="footer__image1" />
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="./images/swipe2.jpg" alt="footer__image1" />
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="./images/swipe3.jpg" alt="footer__image1" />
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="./images/swipe4.jpg" alt="footer__image1" />
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
               <div class="grid-50 grid-parent">
                 <div class="footer__container footer__button">
-                  <button><i class="la la-angle-left"></i></button>
-                  <button><i class="la la-angle-right"></i></button>
+                  <button class="swiper-button-prev">
+                    <i class="la la-angle-left"></i>
+                  </button>
+                  <button class="swiper-button-next">
+                    <i class="la la-angle-right"></i>
+                  </button>
                 </div>
                 <div class="footer__container footer__text">
                   <h4>advice</h4>
@@ -130,5 +150,15 @@
         <div class="footer footer__right"></div>
       </footer>
     </div>
+
+    <script src="./js/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper('.swiper', {
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+      });
+    </script>
   </body>
 </html>

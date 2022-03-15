@@ -197,13 +197,27 @@ body {
   position: relative;
   height: 290px;
   width: 100%;
-  bottom: 45px;
+  bottom: 44px;
   overflow: hidden;
 }
 #main footer .footer__container.footer__button {
   display: flex;
-  bottom: 45px;
+  bottom: 44px;
 }
+#main footer .footer__container.footer__button .swiper-button-next,
+#main footer .footer__container.footer__button .swiper-button-prev {
+  position: static;
+  top: 0;
+  width: unset;
+  /* height: inherit; */
+  margin-top: 0;
+  background-image: none;
+}
+#main footer .footer__container.footer__button .swiper-button-next::after,
+#main footer .footer__container.footer__button .swiper-button-prev::after {
+  content: none;
+}
+
 #main footer .footer__container.footer__button button {
   border: none;
   background-color: #273238;
