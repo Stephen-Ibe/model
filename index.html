@@ -138,10 +138,34 @@
                 </div>
                 <div class="footer__container footer__text">
                   <h4>advice</h4>
-                  <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Itaque, ex.
-                  </p>
+                  <div class="swiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <p>
+                          Lorem ipsum dolor sit, amet consectetur adipisicing
+                          elit. Itaque, ex.
+                        </p>
+                      </div>
+                      <div class="swiper-slide">
+                        <p>
+                          Lorem ipsum dolor sit, amet consectetur adipisicing
+                          elit. Itaque, ex.
+                        </p>
+                      </div>
+                      <div class="swiper-slide">
+                        <p>
+                          Lorem ipsum dolor sit, amet consectetur adipisicing
+                          elit. Itaque, ex.
+                        </p>
+                      </div>
+                      <div class="swiper-slide">
+                        <p>
+                          Lorem ipsum dolor sit, amet consectetur adipisicing
+                          elit. Itaque, ex.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -154,6 +178,11 @@
     <script src="./js/swiper-bundle.min.js"></script>
     <script>
       var swiper = new Swiper('.swiper', {
+        autoplay: {
+          delay: 1000,
+          pauseOnMouseEnter: true,
+          disableOnInteraction: false,
+        },
         navigation: {
           nextEl: '.swiper-button-next',
           prevEl: '.swiper-button-prev',
