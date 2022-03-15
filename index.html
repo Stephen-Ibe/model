@@ -11,6 +11,7 @@
 
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/jquery-glitch.css" />
     <link rel="stylesheet" href="./css/unsemantic-grid-responsive-tablet.css" />
     <link rel="stylesheet" href="./css/line-awesome.css" />
     <link rel="stylesheet" href="./css/style.css" />
@@ -48,7 +49,9 @@
           <div class="grid-50">
             <div class="hero__title">
               <h4>sleek</h4>
-              <h1>tranquility</h1>
+              <div class="glitch">
+                <h1>tranquility</h1>
+              </div>
             </div>
             <div class="hero__content">
               <h5>wire</h5>
@@ -175,6 +178,8 @@
       </footer>
     </div>
 
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/jquery-glitch.js"></script>
     <script src="./js/swiper-bundle.min.js"></script>
     <script>
       var swiper = new Swiper('.swiper', {
@@ -187,6 +192,11 @@
           nextEl: '.swiper-button-next',
           prevEl: '.swiper-button-prev',
         },
+      });
+
+      $('.glitch').glitch({
+        layers: ['red', 'green', 'orange', 'pink'],
+        offset: [10, 0],
       });
     </script>
   </body>
