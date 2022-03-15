@@ -31,12 +31,10 @@ body {
 #main header nav {
   float: right;
 }
-
 #main header nav ul li {
   float: left;
   list-style: none;
 }
-
 #main header nav ul li a {
   display: block;
   text-decoration: none;
